@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    position: relative;
+    width: 100%;
+}
+
+/* nav */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.438); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 5;
+}
+
+nav ul {
+    list-style: none;
+    padding: 7px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+/* Carrusel */
+.carousel-item {
+    width: 100%;
+    height: 70vh; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Llena el contenedor sin dejar espacios en blanco */
+    object-position: center; /* Centra la imagen para una mejor visualización */
+    opacity: 0.9; /* Transparencia opcional */
+}
+
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+}
+
+
+
+/* links */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul li {
+    margin-left: 10px; 
+}
+
+ul a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.589); 
+    font-size: 2.4em; 
+}
+
+
+
+/* Asegúrate de que el video ocupe todo el espacio disponible */
+.video-container {
+    width: 100%;
+    height: 100%; /* Ajusta según el tamaño que prefieras */
+    object-fit: cover;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Cambia la dirección de la fila a columna en pantallas pequeñas */
+    }
+
+    .video-container, .content {
+        width: 100%; /* Asegúrate de que las columnas ocupen todo el ancho */
+    }
+
+    .content {
+        margin-top: 20px; /* Añade un margen en la parte superior si es necesario */
+    }
+}
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width: 1270px) {
+    
+    .carousel-item {
+        height: 60vh;
+    }
+
+    ul a {
+        font-size: 1.6em; 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .carousel-item {
+        height: 50vh;
+    }
+
+    ul a {
+        font-size: 1.4em; 
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 40vh;
+    }
+
+    ul a {
+        font-size: 1.1em; 
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 300px) {
+    .carousel-item {
+        height: 30vh;
+    }
+
+    ul a {
+        font-size: 0.8em; 
+    }
+
+    nav ul li {
+        margin: 0 6px;
+    }
+}
