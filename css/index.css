@@ -33,6 +33,41 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* links */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul li {
+    margin-left: 10px; 
+}
+
+ul a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.589); 
+    font-size: 2.4em; 
+}
+
+ul.d-flex li a i {
+    color: #000; 
+    
+    transition: color 0.3s, text-shadow 0.3s; 
+}
+
+ul.d-flex li a i:hover,
+ul.d-flex li a i:focus {
+    color: #000; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5); 
+}
+
+ul.d-flex li a i:active {
+    color: #000; 
+    text-shadow: 0 0 12px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.7); 
+}
+
 
 /* Carrusel */
 .carousel-item {
@@ -64,23 +99,7 @@ nav ul li {
 
 
 
-/* links */
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-}
 
-ul li {
-    margin-left: 10px; 
-}
-
-ul a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.589); 
-    font-size: 2.4em; 
-}
 
 
 
