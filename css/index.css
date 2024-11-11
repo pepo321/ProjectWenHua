@@ -330,16 +330,7 @@ ul.d-flex li a i:active {
     .content {
         margin-top: 20px; 
     }
-    .carousel-item{
-        height: 50vh;
-    }
-  
-
-    .carousel-item img{
-        height: 100%;
-        max-height: 100%;
-        object-position: center;  
-    }
+   
 }
 
 
@@ -680,14 +671,6 @@ ul.d-flex li a i:active {
 /* responsive */
 @media (max-width: 1270px) {
     
- 
-    .carousel-item{
-        height: 40vh;
-    }
-
-    .carousel-item img{
-        height: auto;
-    }
 
 
     .videoLeft{
@@ -706,14 +689,7 @@ ul.d-flex li a i:active {
 }
 
 @media (max-width: 768px) {
-    
-    .carousel-item{
-        height: 30vh;
-    }
 
-    .carousel-item img{
-        height: auto;
-    }
  
     .videoLeft{
         
@@ -730,14 +706,6 @@ ul.d-flex li a i:active {
 
 
 @media (max-width: 576px) {
-    .carousel-item{
-        height: 20vh;
-    }
-
-    .carousel-item img{
-        height: auto;
-    }
-
     .videoLeft{
         padding-left: 40px;
         display: flex;
@@ -829,12 +797,9 @@ ul.d-flex li a i:active {
 }
 
 
-
-
-/* responsive cards */
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     .carousel-item{
-        height: 30vh;
+        height: 55vh;
     }
     .carousel-item img{
         height: auto;
@@ -848,6 +813,93 @@ ul.d-flex li a i:active {
         width: 200px; 
         height: 200px; 
     }
+}
+
+/* responsive cards */
+@media (max-width: 1400px) {
+    .carousel-item{
+        height: 55vh;
+    }
+    .carousel-item img{
+        height: auto;
+    }
+    .col-3 {
+        width: 100%; 
+        margin-bottom: 20px; /
+    }
+
+    .imagen-personaje {
+        width: 200px; 
+        height: 200px; 
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+  .btnGame {
+    width: 135px; /* Puede ajustarse */
+    height: 30px; /* Puede ajustarse */
+    font-size: 15px;
+    outline: 3px solid #a5a206;
+
+  }
+  
+  .btnGame:hover {
+    width: 140px;
+    height: 30px;
+    outline-offset: 2px;
+    transform: scale(1.1) rotate(3deg);
+    
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .btnGame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 26px;
+    font-size: 10px;
+    outline: 3px solid #a5a206;
+    transition: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnGame:hover {
+    /* Anula todos los efectos en hover para esta medida */
+    transform: translate(-50%, -50%);
+    outline-offset: 0;
+    width: 110px;
+    height: 26px;
+}
+}
+
+@media (max-width: 1200px) {
+
+    .carousel-item{
+        height: 55vh;
+    }
+    .carousel-item img{
+        height: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .carousel-item{
+        height: 40vh;
+    }
+    .carousel-item img{
+        height: 100%;
+    }
+
 }
 
 
@@ -882,16 +934,7 @@ ul.d-flex li a i:active {
         font-size: 0.9rem;
     }
 
-    .carousel-item{
-        height: 70vh;
-    }
-    
-
-    .carousel-item img{
-        height: 100%;
-        max-height: 100%;
-        object-position: center;  
-    }
+   
 }
 
 
@@ -942,6 +985,10 @@ ul.d-flex li a i:active {
     
     .botonesMAPAS{
         width: 100%;
+    }
+
+    .carousel-btn{
+      font-size: 15px;
     }
     .Btn { 
         height: 40px;  
