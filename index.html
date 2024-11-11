@@ -25,29 +25,33 @@
       </ul>
     </nav>
   
-      <div class="container-fluid p-0">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="/imgs/PAG-DISEÑOS.png" class="d-block w-100" alt="Imagen 1">
-              </div>
-              <div class="carousel-item">
-                  <img src="/imgs/trailerCap3.PNG" class="d-block w-100" alt="Imagen 2">
-              </div>
-              <div class="carousel-item">
-                <img src="/imgs/juego.PNG" class="d-block w-100" alt="Imagen 2">
-            </div>
+    <div class="container-fluid p-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imgs/PAG-DISEÑOS.png" class="d-block w-100" alt="Imagen 1">
+            <button class="carousel-btn" onclick="location.href='#maps'">Ver más...</button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <img src="/imgs/trailerCap3.PNG" class="d-block w-100" alt="Imagen 2">
+            <button class="carousel-btn" onclick="location.href='#trailers'">Ver más...</button>
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/juego.PNG" class="d-block w-100" alt="Imagen 2">
+            <button class="carousel-btn" onclick="location.href='#game'">Ver más...</button>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </div>
+    
   </header>
 
 
@@ -57,15 +61,14 @@
           
           <!-- trailer 1 -->
           <div class="row trailersContent" id="trailer-1">
-            <div class="col-12 col-md-6 videoLeft"> <!-- Video -->
+            <div class="col-12 col-md-6 videoLeft" id="videoLeft"> <!-- Video -->
               <video data-src="/videos/TRAILER-CAP1.mp4" controls width="100%" height="100%" class="video-container" loading="lazy"></video>
             </div>
-            <div class="col-12 col-md-6 titleParRight"> <!-- Título y Párrafo -->
+            <div class="col-12 col-md-6 titleParRight" id="titleParRight"> <!-- Título y Párrafo -->
               <h1 class="d-flex justify-content-center">Dos culturas, una ciudad</h1>
               <p>SINOPSIS: Tony Lee nos cuenta cómo fue su experiencia desde que llegó a Trujillo y cuáles son sus expectativas a futuro en nuestra ciudad.Carlos Loo, actual gerente del chifa Ah Chau, nos habla sobre la fusión gastronómica que envuelve a China y Perú.</p>
               <div class="botonCircle">
                 <button title="link" class="button">
-            
                    <div class="button__circle">
                      <svg
                        viewBox="0 0 23 22"
@@ -91,14 +94,12 @@
           </div>
       
           <!-- trailer 2 -->
-          <div class="row" id="trailer-2">
-            <div class="col-12 col-md-6 titleParLeft"> <!-- Título y Párrafo -->
+          <div class="row trailersContent" id="trailer-2">
+            <div class="col-12 col-md-6 titleParLeft" id="titleParLeft"> <!-- Título y Párrafo -->
               <h1 class="d-flex justify-content-center">Festividad que perdura</h1>
               <p>SINOPSIS: Víctor Sánchez, bailarín del grupo Hong Hsi, nos revela la profunda historia detrás de los famosos dragones y leones chinos y como su gran simbolismo perdura en nuestra ciudad.</p>
               <button title="link" class="button">
-                
-               
-               
+           
                  <div class="button__circle">
                    <svg
                      viewBox="0 0 23 22"
@@ -122,23 +123,20 @@
                  </div>
                </button>
             </div>
-            <div class="col-12 col-md-6 videoRight"> <!-- Video -->
+            <div class="col-12 col-md-6 videoRight" id="videoRight"> <!-- Video -->
               <video data-src="/videos/TRAILER-CAP2.mp4" controls width="100%" height="100%" class="video-container" loading="lazy"></video>
             </div>
           </div>
       
           <!-- trailer 3 -->
-          <div class="row" id="trailer-3">
-            <div class="col-12 col-md-6 videoLeft"> <!-- Video -->
+          <div class="row trailersContent" id="trailer-3">
+            <div class="col-12 col-md-6 videoLeft" id="videoLeft"> <!-- Video -->
               <video data-src="/videos/TRAILER-CAP3.mp4" controls width="100%" height="100%" class="video-container" loading="lazy"></video>
             </div>
-            <div class="col-12 col-md-6 titleParRight"> <!-- Título y Párrafo -->
+            <div class="col-12 col-md-6 titleParRight" id="titleParRight"> <!-- Título y Párrafo -->
               <h1 class="d-flex justify-content-center">Las tiendas chinas, un legado vivo.</h1>
               <p>SINOPSIS: Mario Wu, administrador de la tienda de importaciones Golden Cat, nos narra cómo fue su llegada a Trujillo y la acogida que nuestra ciudad le brindó a sus negocios.</p>
               <button title="link" class="button">
-                
-               
-               
                  <div class="button__circle">
                    <svg
                      viewBox="0 0 23 22"
@@ -166,7 +164,7 @@
       
       
       <!-- personajes -->
-      <section class="personajes" id="personajes">
+      <section class="personajes mt-4" id="personajes">
         <div class="title d-flex justify-content-center text-white p-1"><h1>PERSONAJES</h1></div>
         <div class="container-fluid p-3 mt-3">
           <div class="row personCards d-flex justify-content-center">
@@ -218,22 +216,37 @@
       </section>
       
       <!-- link game -->
-      <section class="game" id="game">
+      <section class="game p-2" id="game">
         <div class="background-container">
           <img src="/imgs/juego.PNG" alt="Background Image">
-          <button onclick="window.open('https://view.genially.com/5ee8782f1e08d30d8bbb0340/interactive-content-escape-del-castillo-pixel', '_blank');" class="btnGame">
-            <span class="share">CLIC AQUÍ</span>
+          <button onclick="window.open('https://view.genially.com/672ed9c32f24e70b43ab51f9', '_blank');" class="btnGame">
+            <span class="share d-flex justify-content-center">CLIC AQUÍ</span>
           </button>  
-          </button>   
+          
         </div>
       </section>
       
-
-
       <!-- mapa -->
-      <section class="maps" id="maps">
-
+      <section class="maps p-2" id="maps">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <!-- Columna para la imagen -->
+            <div class="col-12 col-md-8">
+              <div class="image-container">
+                <img src="/imgs/Mapa.png" alt="Mapa">
+              </div>
+            </div>
+        
+            <!-- Columna para los botones -->
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center mt-3 botonesMAPAS">
+              <button class="Btn firstBtn" onclick="window.open('https://www.google.com/maps/place/Golden+Cat/@-8.1133601,-79.0262647,15z/data=!4m2!3m1!1s0x0:0x72f44185b29d9f41?sa=X&ved=1t:2428&ictx=111&cshid=1731299349454471', '_blank');"><i class='bx bx-map'></i>Golden Cat</button>
+              <button class="Btn secondBtn" onclick="window.open('https://www.google.com/maps/place/Hiper+Asia/@-8.1021123,-79.0482856,15z/data=!4m6!3m5!1s0x91ad3d4bd3ca0365:0x6b6ec88263f02d8a!8m2!3d-8.1021123!4d-79.0482856!16s%2Fg%2F11krqgznl4?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D', '_blank');"><i class='bx bx-map'></i>Hiper Asia</button>
+              <button class="Btn thirdBtn" onclick="window.open('https://www.google.com/maps/place/Restaurante+Eating+House/@-8.1301015,-79.037404,15z/data=!4m2!3m1!1s0x0:0x5d6cf2e57609595c?sa=X&ved=1t:2428&ictx=111', '_blank');"><i class='bx bx-map'></i>Chifa Eating House</button>
+            </div>
+          </div>
+        </div>
       </section>
+      
     </main>
 
     <footer>
