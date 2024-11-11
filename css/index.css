@@ -1351,6 +1351,54 @@ ul.d-flex li a i:active {
     }
   }
 
+
+  @media (max-width: 530px) {
+    /* Centra los elementos y asegura que estén en una sola fila */
+    .midCont {
+        display: flex; /* Usa flexbox */
+        justify-content: space-between; /* Coloca los elementos al extremo, separados */
+        align-items: center; /* Centra los elementos verticalmente */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0 10px; /* Espaciado a los lados */
+    }
+
+    /* Ajusta el ícono social */
+    .social .social-item {
+        margin-right: 15px; /* Espacio entre el icono y el título */
+    }
+
+    .titleRight{
+        width: 100%;
+    }
+    /* Ajusta el título */
+    .txtContach3 {
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        text-align: right; /* Alinea el texto a la derecha */
+        padding: 30px;
+
+    }
+
+    /* Asegura que las columnas no ocupen todo el ancho */
+    .col-2, .col-7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto; /* No permite que se expandan */
+    }
+
+    /* Se asegura de que la fila esté centrada */
+    .row {
+        display: flex;
+        justify-content: space-between; /* Coloca los elementos al final de la fila, separados */
+        align-items: center;
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+}
+
+
+
+
+
   @media (max-width: 350px) {
     .contactMid {
         display: flex;
