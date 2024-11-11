@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
 }
+
+    
 
 /* header */
 header {
@@ -98,8 +105,11 @@ ul.d-flex li a i:active {
 }
 
 
-
-
+/* trailers */
+.trailersContent{
+    display: flex;
+    justify-content: center;
+}
 .video-container {
     width: 90%;
     height: 90%; 
@@ -108,10 +118,14 @@ ul.d-flex li a i:active {
 
 .videoLeft{
     padding-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .videoRight{
     padding-right: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .titleParLeft{
@@ -240,7 +254,157 @@ ul.d-flex li a i:active {
 
 
 
+/* cards */
 
+.imagen-personaje {
+    width: 300px;               
+    height: 300px;               
+    object-fit: cover;          
+    border-radius: 50%;        
+    display: block;             
+    margin: 0 auto;              
+    object-position: center;     
+}
+
+
+.card {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.6s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    padding: 1em;
+    display: flex;
+    align-items: center;        
+    justify-content: center;    
+    text-align: center;
+    height: 100%;   
+    width: 20%;            
+}
+
+.titlText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen-personaje {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em; 
+}
+
+.texto {
+    padding: 15px;
+    color: #fff;
+}
+
+.texto h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+  
+  .card:hover {
+    transform: translateY(-20px);   
+    box-shadow: 0 16px 30px rgba(255, 255, 255, 0.7); 
+  }
+  
+
+  .personCards {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 2em;        
+}
+
+/* game */
+.game {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+  }
+  
+  .background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Imagen de fondo */
+  .background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.4; 
+  }
+  
+
+  .btnGame {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 13, 240);
+    width: 200px; /* Puede ajustarse */
+    height: 50px; /* Puede ajustarse */
+    border-radius: 10px;
+    font-size: 18px;
+    outline: 3px solid #270092;
+    cursor: pointer;
+    transition: ease 0.1s all;
+  }
+  
+  .btnGame:hover {
+    width: 180px;
+    height: 60px;
+    outline-offset: 4px;
+    transform: scale(1.3) rotate(2deg);
+    background-color: blue;
+  }
+  
+  .share {
+    margin-left: 5px;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .btnGame {
+      width: 150px; 
+      height: 40px; 
+      font-size: 16px; 
+    }
+
+    .background-container img {
+      opacity: 0.6; 
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .btnGame {
+      width: 120px;
+      height: 35px;
+      font-size: 14px;
+    }
+
+    .background-container img {
+      opacity: 0.7;
+    }
+  }
+  
+  
 
 /* responsive */
 @media (max-width: 1270px) {
@@ -251,6 +415,18 @@ ul.d-flex li a i:active {
 
     ul a {
         font-size: 1.6em; 
+    }
+
+    .videoLeft{
+        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .videoRight{
+        
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -263,7 +439,20 @@ ul.d-flex li a i:active {
     ul a {
         font-size: 1.4em; 
     }
+
+    .videoLeft{
+        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .videoRight{
+        
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 @media (max-width: 576px) {
     .carousel-item {
@@ -277,7 +466,20 @@ ul.d-flex li a i:active {
     nav ul li {
         margin: 0 5px;
     }
+
+    .videoLeft{
+        padding-left: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .videoRight{
+        padding-right: 40px;
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 @media (max-width: 300px) {
     .carousel-item {
@@ -296,7 +498,7 @@ ul.d-flex li a i:active {
 @media (max-width: 576px) {
     .titleParLeft,
     .titleParRight {
-        padding: 0 10px; /* Padding más pequeño en pantallas pequeñas */
+        padding: 0 10px; 
         text-align: center;
     }
 }
@@ -304,6 +506,54 @@ ul.d-flex li a i:active {
 @media (max-width: 400px) {
     .titleParLeft,
     .titleParRight {
-        padding: 0 5px; /* Mínimo padding en pantallas muy pequeñas */
+        padding: 0 5px; 
+    }
+}
+
+
+
+/* responsive cards */
+@media (max-width: 1400px) {
+    .col-3 {
+        width: 100%; 
+        margin-bottom: 20px; /
+    }
+
+    .imagen-personaje {
+        width: 200px; 
+        height: 200px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .col-3 {
+        width: 100%; 
+        margin-bottom: 20px; /
+    }
+
+    .imagen-personaje {
+        width: 200px; 
+        height: 200px; 
+    }
+}
+
+
+@media (max-width: 576px) {
+    .col-3 {
+        width: 100%; 
+    }
+
+    .imagen-personaje {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .texto h1 {
+        font-size: 1.2rem; 
+    }
+
+    .texto p {
+        font-size: 0.9rem;
     }
 }
