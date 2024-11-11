@@ -134,8 +134,65 @@ ul.d-flex li a i:active {
       padding: 8px 15px;  /* Ajusta el tamaño del botón en pantallas pequeñas */
       font-size: 14px;     /* Reduce el tamaño de la fuente */
     }
+    .carousel-item{
+        height: 60vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
+    }
   }
   
+
+/* cel */
+
+@media(max-width: 700px){
+    .carousel-item{
+        height: 50vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
+    }
+}
+
+@media(max-width: 400px){
+    .carousel-btn{
+        font-size: 5px;
+    }
+}
+
+  @media (max-width: 240px){
+    .carousel-item{
+        height: 50vh;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-position: center; 
+        opacity: 0.9; 
+    }
+
+    .carousel-btn{
+        font-size: 3px;
+    }
+  }
   
 
 /* trailers */
@@ -280,6 +337,20 @@ ul.d-flex li a i:active {
 
     .content {
         margin-top: 20px; 
+    }
+    .carousel-item{
+        height: 50vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
     }
 }
 
@@ -527,6 +598,20 @@ ul.d-flex li a i:active {
     .background-container{
         height: 20vh;
     }
+    .carousel-item{
+        height: 70vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
+    }
   }
 
 
@@ -708,6 +793,21 @@ ul.d-flex li a i:active {
         margin: 0 6px;
     }
 
+    .carousel-item{
+        height: 50vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
+    }
+
    
 }
 
@@ -716,6 +816,21 @@ ul.d-flex li a i:active {
     .titleParRight {
         padding: 0 10px; 
         text-align: center;
+    }
+
+    .carousel-item{
+        height: 70vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
     }
 }
 
@@ -726,12 +841,14 @@ ul.d-flex li a i:active {
     }
 
     .carousel-item{
-        height: 20vh;
+        height: 60vh;
     }
 
     .carousel-item img{
         height: auto;
     }
+
+    
 }
 
 
@@ -806,6 +923,21 @@ ul.d-flex li a i:active {
     .texto p {
         font-size: 0.9rem;
     }
+
+    .carousel-item{
+        height: 70vh;
+    }
+    .contNav{
+        height: 20px;
+        max-height: 100%;
+        font-size: 7px;
+    }
+
+    .carousel-item img{
+        height: 100%;
+        max-height: 100%;
+        object-position: center;  
+    }
 }
 
 
@@ -841,11 +973,11 @@ ul.d-flex li a i:active {
 /* Para pantallas con un ancho máximo de 400px */
 @media (max-width: 400px) {
     .carousel-item{
-        height: 10vh;
+        height: 30vh;
     }
 
     .carousel-item img{
-        height: auto;
+        height: 100%;
     }
     .Btn {
         width: 180px;  
