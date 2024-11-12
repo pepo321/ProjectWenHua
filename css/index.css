@@ -5,11 +5,17 @@
     font-family: "Faculty Glyphic", sans-serif;
     font-weight: 400;
     font-style: normal;
-      
+    
 }
 
-    
 /* header */
+.linkgIg{
+  color: #ffffff;
+}
+
+body{
+  background-color: black;
+}
 header {
     position: relative;
     width: 100%;
@@ -75,6 +81,7 @@ ul.d-flex li a i:active {
 }
 
 
+
 /* Carrusel */
 .carousel-item {
     width: 100%;
@@ -92,7 +99,9 @@ ul.d-flex li a i:active {
     opacity: 0.9; 
 }
 
-
+.titleYellow{
+  color: #FFD800;
+}
 .carousel-item::before {
     content: "";
     position: absolute;
@@ -104,7 +113,40 @@ ul.d-flex li a i:active {
     z-index: 1; 
 }
 
-  
+  .textPerson{
+    color: #c92424ec;
+  }
+
+  .txtMapContain{
+    display: flex;
+    flex-direction: column; /* Para apilar los párrafos uno encima de otro */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto dentro de cada párrafo */
+  }
+
+  .instagramLinkMap{
+    color: #e1306c; /* Color para hacer que el enlace resalte */
+    text-decoration: underline;
+  }
+
+  /* CSS */
+.instagramLinkMap {
+  font-weight: bold; /* Opción para que el texto resalte más */
+  animation: textColorChange 1.4s infinite alternate;
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Animación de cambio de color */
+@keyframes textColorChange {
+  0% {
+    color: #ff1100; /* Rojo pasión */
+  }
+  100% {
+    color: #ff8c00; /* Naranja pasión */
+  }
+}
+
   /* Estilos para el botón */
   .carousel-btn {
     position: absolute;
@@ -144,6 +186,7 @@ ul.d-flex li a i:active {
         max-height: 100%;
         object-position: center;  
     }
+
   }
   
 
@@ -191,6 +234,7 @@ ul.d-flex li a i:active {
 .trailersContent{
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 .video-container {
     width: 90%;
@@ -330,7 +374,11 @@ ul.d-flex li a i:active {
     .content {
         margin-top: 20px; 
     }
-   
+   .trailersContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 }
 
 
@@ -394,8 +442,139 @@ ul.d-flex li a i:active {
     font-size: 1rem;
     line-height: 1.5;
 }
+.textoTrai{
+  color: white;
+}
 
+@media (max-width: 455px){
+  .titleGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5em;
+  }
+}
+
+@media (max-width: 404px){
+  .titleGame{
+    font-size:1.5em;
+  }
+}
+
+@media (max-width: 385px){
+  .titleGame{
+    font-size:1.3em;
+  }
+}
+
+@media (max-width: 340px){
+  .titleGame{
+    font-size:1.2em;
+  }
+}
+
+
+@media (max-width: 323px){
+  .titleGame{
+    font-size: 1em;
+  }
+
+  .titleMap{
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 273px){
+  .titleGame{
+    font-size: 0.8em;
+  }
+
+  .titleMap{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 228px){
+  .titleGame{
+    font-size: 0.7em;
+  }
+
+  .titleMap{
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 206px){
+  .titleGame{
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 183px){
+  .titleGame{
+    font-size: 0.4em;
+  }
+}
+
+
+@media (max-width: 395px){
+  .sectionPerson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+}
+
+/* aca1 */
+@media (max-width: 330px) {
+  
+  .texto p{
+    font-size: 12px;
+  }
+  .titleParRight, .titleParLeft p{
+    font-size: 12px;
+  }
+
+  .centPerso h1{
+    margin-bottom: -30px;
+  }
+  
+  .card{
+    margin-bottom: 1px;
+  }
+}
+
+@media (max-width: 280px) {
+  .texto p{
+    font-size: 10px;
+  }
+
+  .titleParRight, .titleParLeft p{
+    font-size: 10px;
+  }
+  .titleParRight h1{
+    font-size: 12px;
+  }
+  
+  .titleParLeft h1{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 220px) {
+  .texto p{
+    font-size: 9px;
+  }
+
+  .sectionPerson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
   .card:hover {
     transform: translateY(-20px);   
     box-shadow: 0 16px 30px rgba(230, 197, 14, 0.829); 
@@ -432,7 +611,7 @@ ul.d-flex li a i:active {
 
   .btnGame {
     position: absolute; 
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%); 
     display: flex;
@@ -568,6 +747,236 @@ ul.d-flex li a i:active {
   }
   
 
+  /* footer */
+  @media (max-width: 1230px) {
+    .contactMid {
+      display: flex;                  /* Alinea todos los contactos en una fila */
+      justify-content: space-evenly;   /* Distribuye los contactos de manera equitativa */
+      flex-wrap: nowrap;               /* Impide que los elementos se envuelvan a la siguiente línea */
+      gap: 10px;                       /* Ajusta el espacio entre los elementos */
+      width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
+      text-align: center;
+    }
+  
+    .rowContact {
+      display: flex;                  /* Alinea íconos y texto horizontalmente */
+      align-items: center;            /* Centra verticalmente */
+      justify-content: center;        /* Centra horizontalmente */
+      font-size: 0.7rem;              /* Reducido el tamaño del texto */
+      flex-direction: row;            /* Organiza el icono y el texto en una fila (horizontalmente) */
+    }
+  
+    .rowContact i {
+      font-size: 1.2rem;              /* Reducido el tamaño de los íconos */
+      margin-right: 5px;              /* Añade espacio entre el ícono y el texto */
+    }
+  
+    .txtContach3 {
+      font-size: 0.7rem;              /* Reduce aún más el tamaño del texto */
+      margin: 0;                      /* Elimina márgenes innecesarios */
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .contactMid {
+      display: flex;                  /* Alinea todos los contactos en una fila */
+      justify-content: space-evenly;   /* Distribuye los contactos de manera equitativa */
+      flex-wrap: nowrap;               /* Impide que los elementos se envuelvan a la siguiente línea */
+      gap: 8px;                        /* Ajusta el espacio entre los elementos */
+      width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
+      text-align: center;
+    }
+  
+    .rowContact {
+      display: flex;                  /* Alinea íconos y texto horizontalmente */
+      align-items: center;            /* Centra verticalmente */
+      justify-content: center;        /* Centra horizontalmente */
+      font-size: 0.6rem;              /* Reducido aún más el tamaño del texto */
+      flex-direction: row;            /* Organiza el icono y el texto en una fila (horizontalmente) */
+    }
+  
+    .rowContact i {
+      font-size: 1.1rem;              /* Reduce el tamaño de los íconos */
+      margin-right: 5px;              /* Añade espacio entre el ícono y el texto */
+    }
+  
+    .txtContach3 {
+      font-size: 0.6rem;              /* Reduce el tamaño del texto aún más */
+      margin: 0;                      /* Elimina márgenes innecesarios */
+    }
+  }
+  
+
+  /* Para pantallas con un ancho máximo de 1160px */
+@media (max-width: 1160px) {
+  .contactMid {
+    display: flex;                  /* Alinea todos los contactos en una fila */
+    justify-content: space-evenly;   /* Distribuye los contactos de manera equitativa */
+    flex-wrap: nowrap;               /* Impide que los elementos se envuelvan a la siguiente línea */
+    gap: 8px;                        /* Ajusta el espacio entre los elementos */
+    width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
+    text-align: center;
+  }
+
+  .rowContact {
+    display: flex;                  /* Alinea íconos y texto horizontalmente */
+    align-items: center;            /* Centra verticalmente */
+    justify-content: center;        /* Centra horizontalmente */
+    font-size: 0.6rem;              /* Reducido aún más el tamaño del texto */
+    flex-direction: row;            /* Organiza el icono y el texto en una fila (horizontalmente) */
+  }
+
+  .rowContact i {
+    font-size: 1.1rem;              /* Reduce el tamaño de los íconos */
+    margin-right: 5px;              /* Añade espacio entre el ícono y el texto */
+  }
+
+  .txtContach3 {
+    font-size: 0.6rem;              /* Reduce el tamaño del texto aún más */
+    margin: 0;                      /* Elimina márgenes innecesarios */
+  }
+}
+
+/* Para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+  .contactMid {
+    gap: 5px;                        /* Reduce aún más el espacio entre los elementos */
+  }
+
+  .rowContact {
+    font-size: 0.55rem;              /* Reduce el tamaño del texto ligeramente */
+  }
+
+  .rowContact i {
+    font-size: 1rem;                 /* Ajusta los íconos a un tamaño más pequeño */
+  }
+
+  .txtContach3 {
+    font-size: 0.55rem;              /* Reduce aún más el tamaño del texto */
+  }
+}
+
+/* Para pantallas con un ancho máximo de 900px */
+@media (max-width: 900px) {
+  .contactMid {
+    gap: 5px;                        /* Mantiene el espacio entre los elementos reducido */
+    text-align: center;              /* Centra el texto */
+  }
+
+  .rowContact {
+    font-size: 0.5rem;               /* Ajuste en el tamaño de fuente para pantallas más pequeñas */
+  }
+
+  .rowContact i {
+    font-size: 0.9rem;               /* Ajuste el tamaño de los íconos */
+  }
+
+  .txtContach3 {
+    font-size: 0.5rem;               /* Ajuste de tamaño de texto */
+  }
+}
+
+/* Para pantallas con un ancho máximo de 800px */
+@media (max-width: 800px) {
+  .contactMid {
+    display: flex;                  /* Alinea todos los contactos en una fila */
+    justify-content: space-between;  /* Distribuye los elementos en una fila */
+    flex-wrap: nowrap;               /* Asegura que no se envuelvan */
+    gap: 4px;                        /* Ajusta el espacio entre los elementos */
+    width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
+  }
+
+  .rowContact {
+    display: flex;                  /* Alinea los elementos en una fila */
+    align-items: center;            /* Centra verticalmente */
+    justify-content: center;        /* Centra horizontalmente */
+    font-size: 0.45rem;             /* Reduce aún más el tamaño del texto */
+  }
+
+  .rowContact i {
+    font-size: 0.8rem;              /* Reduce aún más el tamaño de los íconos */
+    margin-right: 3px;              /* Espacio reducido entre el ícono y el texto */
+  }
+
+  .txtContach3 {
+    font-size: 0.45rem;             /* Reduce aún más el tamaño del texto */
+  }
+}
+
+  
+.contactMid {
+  display: flex;
+  justify-content: space-around;  
+  flex-wrap: wrap;  
+  gap: 20px;  
+  width: 100%;  
+  text-align: center;  
+}
+
+
+.rowContact {
+  display: flex;
+  align-items: center;  
+  justify-content: center;  
+  
+}
+
+
+
+/* Efecto de hover para el icono */
+.rowContact:hover .linkgIg {
+  color: #F58529;  /* Color de transición al pasar el ratón */
+}
+
+/* Estilos para el nombre de contacto */
+.txtContach3 {
+  font-size: 18px;  /* Tamaño del texto */
+  color: #fff;  /* Color blanco */
+  margin: 0;  /* Elimina el margen por defecto */
+}
+
+
+
+
+  
+  .linkgIg {
+    font-size: 24px; /* Tamaño del icono */
+    color: #E4405F; /* Color inicial similar al logo de Instagram */
+    transition: color 0.9s ease-in-out;
+    animation: colorChange 5s infinite; /* Llama a la animación */
+  }
+  
+  /* Animación para el cambio de colores */
+  @keyframes colorChange {
+    0% {
+      color: #E4405F; /* Rosa */
+    }
+    25% {
+      color: #F58529; /* Naranja */
+    }
+    50% {
+      color: #FFDC80; /* Amarillo */
+    }
+    75% {
+      color: #9B51E0; /* Violeta */
+    }
+    100% {
+      color: #E4405F; /* Rosa */
+    }
+  }
+  
+  .rowContact:hover .linkgIg {
+    animation: none; /* Detiene la animación al pasar el cursor */
+    color: #E4405F; /* Color del logo de Instagram */
+  }
+  
+  @media (max-width: 768px) {
+    .contactMid {
+      flex-direction: column;  /* Cambia la disposición a columna en pantallas pequeñas */
+      align-items: center;
+    }
+  }
+
   @media(max-width: 1200px){
     .background-container{
         height: 40vh;
@@ -578,14 +987,22 @@ ul.d-flex li a i:active {
       }
   }
 
+  
+
   @media(max-width: 750px){
     .background-container{
-        height: 20vh;
+        height: 40vh;
     }
+
+    /* Imagen de fondo */
+    .background-container img {
+      width: 100%;
+      height: 100%;
+    }
+    
     .carousel-item{
         height: 70vh;
     }
-
 
     .carousel-item img{
         height: 100%;
@@ -594,27 +1011,91 @@ ul.d-flex li a i:active {
     }
   }
 
-
-
-  @media(max-width: 450){
-    .background-container{
-        height: 20vh;
-    }
+@media(max-width: 530px){
+  .sectionMap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+@media(max-width: 322px){
+ 
+  .txtMapa{
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 255px){
+
+  .txtMapa{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 208px){
+
+  .txtMapa{
+    font-size: 9px;
+  }
+}
+
+@media(max-width: 180px){
+
+  .txtMapa{
+    font-size: 6px;
+  }
+}
+
+/* aca */
+  @media(max-width: 455){
+    .background-container{
+      height: auto;
+      object-fit: center; 
+  }
+
+    /* Imagen de fondo */
+    .background-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: center; 
+    }
+
+    .btnGame {
+      top: 65%;
+      left: 50%;
+  }
+  
+  .btnGame:hover {
+      /* Anula todos los efectos en hover para esta medida */
+      transform: translate(-50%, -50%);
+      outline-offset: 0;
+      width: 110px;
+      height: 26px;
+  }
+
+
+  }
+
   @media (max-width: 768px) {
+    .image-container{
+      height: 40%;
+    }
       .image-container img {
         width: 100%;  
-        height: 20vh;
+        height: 100%;
         object-fit: center; 
       }
   
     .columnaImg{
         width: 100%;
-        height: 30vh;
+        height: 100%;
     }
 
     .botonesMAPAS{
         width: 100%;
+        
+        margin-bottom: 0;
     }
 
     .Btn {
@@ -653,12 +1134,7 @@ ul.d-flex li a i:active {
   
 
   @media (max-width: 480px) {
-    .btnGame {
-      width: 120px;
-      height: 35px;
-      font-size: 14px;
-    }
-
+  
     .background-container img {
       opacity: 0.7;
     }
@@ -930,9 +1406,7 @@ ul.d-flex li a i:active {
         font-size: 1.2rem; 
     }
 
-    .texto p {
-        font-size: 0.9rem;
-    }
+    
 
    
 }
@@ -1253,90 +1727,6 @@ ul.d-flex li a i:active {
     }
 }
 
-
-
-.social {
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .social .social-item {
-    margin: 0 20px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social .social-item .social-link {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    text-align: center;
-    transform: perspective(1000px) rotate(-30deg) skew(25deg)
-      translate(0, 0);
-    transition: all 0.4s ease;
-  }
-  
-  .social .social-item .social-link::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -10px;
-    height: 100%;
-    width: 10px;
-    background: #b1b1b1;
-    transition: all 0.4s ease;
-    transform: rotate(0deg) skewY(-45deg);
-  }
-  
-  .social .social-item .social-link::after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: -5px;
-    height: 10px;
-    width: 100%;
-    background: #b1b1b1;
-    transition: all 0.4s ease;
-    transform: rotate(0deg) skewX(-45deg);
-  }
-  
-  .social .social-item .social-link:hover {
-    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(5px, -5px);
-    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  
-  .social .social-item:nth-child(1) a {
-    color: #dd4b39;
-  }
-  
-  .social .social-item:nth-child(1):hover a {
-    background: #dd4b39;
-  }
-  
-  .social .social-item:nth-child(1):hover a::before {
-    background: #dd4b39;
-  }
-  
-  .social .social-item:nth-child(1):hover a::after {
-    background: #dd4b39;
-  }
-  
-  .social .social-item .social-link:hover {
-    color: #ffffff;
-  }
   
   .footer{
     color: white;
@@ -1355,15 +1745,7 @@ ul.d-flex li a i:active {
     padding-left: 5px;
  }
 
- @media (max-width: 1230px) {
-    .contactMid {
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      justify-content: center; 
-    }
-  }
-
+ 
   @media (max-width: 768px) {
     .textoTitl{
         width: 100%;

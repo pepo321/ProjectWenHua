@@ -57,7 +57,7 @@
 
     <main class="main bg-black">
       <section class="trailers" id="trailers">
-        <div class="container-fluid texto">
+        <div class="container-fluid textoTrai">
           
           <!-- trailer 1 -->
           <div class="row trailersContent" id="trailer-1">
@@ -65,7 +65,7 @@
               <video data-src="/videos/TRAILER-CAP1.mp4" controls width="100%" height="100%" class="video-container" loading="lazy"></video>
             </div>
             <div class="col-12 col-md-6 titleParRight" id="titleParRight"> <!-- Título y Párrafo -->
-              <h1 class="d-flex justify-content-center">DOS CULTURAS, UNA CIUDAD</h1>
+              <h1 class="d-flex justify-content-center titleYellow">DOS CULTURAS, UNA CIUDAD</h1>
               <p>SINOPSIS: Tony Lee nos cuenta cómo fue su experiencia desde que llegó a Trujillo y cuáles son sus expectativas a futuro en nuestra ciudad.Carlos Loo, actual gerente del chifa Ah Chau, nos habla sobre la fusión gastronómica que envuelve a China y Perú.</p>
               <div class="botonCircle">
                 <button title="link" class="button">
@@ -96,7 +96,7 @@
           <!-- trailer 2 -->
           <div class="row trailersContent" id="trailer-2">
             <div class="col-12 col-md-6 titleParLeft" id="titleParLeft"> <!-- Título y Párrafo -->
-              <h1 class="d-flex justify-content-center">FESTIVIDAD QUE PERDURA</h1>
+              <h1 class="d-flex justify-content-center titleYellow">FESTIVIDAD QUE PERDURA</h1>
               <p>SINOPSIS: Víctor Sánchez, bailarín del grupo Hong Hsi, nos revela la profunda historia detrás de los famosos dragones y leones chinos y como su gran simbolismo perdura en nuestra ciudad.</p>
               <button title="link" class="button">
            
@@ -134,7 +134,7 @@
               <video data-src="/videos/TRAILER-CAP3.mp4" controls width="100%" height="100%" class="video-container" loading="lazy"></video>
             </div>
             <div class="col-12 col-md-6 titleParRight" id="titleParRight"> <!-- Título y Párrafo -->
-              <h1 class="d-flex justify-content-center">LAS TIENDAS CHINAS, UN LEGADO VIVO.</h1>
+              <h1 class="d-flex justify-content-center titleYellow">LAS TIENDAS CHINAS, UN LEGADO VIVO.</h1>
               <p>SINOPSIS: Mario Wu, administrador de la tienda de importaciones Golden Cat, nos narra cómo fue su llegada a Trujillo y la acogida que nuestra ciudad le brindó a sus negocios.</p>
               <button title="link" class="button">
                  <div class="button__circle">
@@ -165,8 +165,8 @@
       
       <!-- personajes -->
       <section class="personajes mt-4" id="personajes">
-        <div class="title d-flex justify-content-center text-white p-1"><h1>PERSONAJES</h1></div>
-        <div class="container-fluid p-3 mt-3">
+        <div class="title d-flex justify-content-center text-white p-1 centPerso"><h1 class="titleYellow">PERSONAJES</h1></div>
+        <div class="container-fluid p-3 mt-3 sectionPerson">
           <div class="row personCards d-flex justify-content-center">
             <!-- personaje 1 -->
             <div class="col-3 card">
@@ -174,7 +174,7 @@
                 <img class="imagen-personaje" src="/imgs/TONY-LEE.jpg" alt="Tony Lee">
               <div class="container texto">
                 <h1 class="textPerson">Tony Lee</h1>
-                <p>Dueño del centro comercial Solco y del chifa Eating House. Llegó a Perú hace 24 años y actualmente vive en Trujillo, regresando periódicamente a China para reuniones familiares.</p>
+                <p class="txtPersonParap">Dueño del centro comercial Solco y del chifa Eating House. Llegó a Perú hace 24 años y actualmente vive en Trujillo, regresando periódicamente a China para reuniones familiares.</p>
               </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                 <img class="imagen-personaje" src="/imgs/CARLOS-LOO.jpg" alt="Carlos Loo">
                 <div class="container texto">
                   <h1 class="textPerson">Carlos Loo</h1>
-                  <p>Nació en Lima, llegó a Trujillo cuando su familia se hizo cargo del chifa Ah-Chau, este fue pasando de generación en generación. En la actualidad, Carlos es la cabeza de este legado familiar.</p>
+                  <p class="txtPersonParap">Nació en Lima, llegó a Trujillo cuando su familia se hizo cargo del chifa Ah-Chau, este fue pasando de generación en generación. En la actualidad, Carlos es la cabeza de este legado familiar.</p>
                 </div>
               </div>
             </div>
@@ -196,7 +196,7 @@
                 <img class="imagen-personaje" src="/imgs/VICTOR-SANCHEZ.jpg" alt="Victor Sanchez">
                 <div class="container texto">
                   <h1 class="textPerson">Victor Sanchez</h1>
-                  <p>Nació en Trujillo, es miembro desde el 2018 en el grupo Hong Hsi, quienes practican la danza del dragón y león chino. Es partícipe de diferentes eventos que honran la cultura china.</p>
+                  <p class="txtPersonParap">Nació en Trujillo, es miembro desde el 2018 en el grupo Hong Hsi, quienes practican la danza del dragón y león chino. Es partícipe de diferentes eventos que honran la cultura china.</p>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@
                 <img class="imagen-personaje" src="/imgs/MARIO-WU.jpg" alt="Mario Wu">
                 <div class="container texto">
                   <h1 class="textPerson">Mario Wu</h1>
-                  <p>Nació en España, desde pequeño vio a sus padres involucrados en el mundo de las importaciones y el comercio. Actualmente, él está a cargo de la tienda Golden Cat, en Trujillo. Anhela fundar más tiendas chinas en diferentes ciudades del Perú.</p>
+                  <p class="txtPersonParap">Nació en España, desde pequeño vio a sus padres involucrados en el mundo de las importaciones y el comercio. Actualmente, él está a cargo de la tienda Golden Cat, en Trujillo. Anhela fundar más tiendas chinas en diferentes ciudades del Perú.</p>
                 </div>
               </div>
             </div>
@@ -219,6 +219,7 @@
       <section class="game p-2" id="game">
         <div class="container-">
           <div class="background-container">
+            <h1 class="d-flex justify-content-center p-3 titleYellow titleGame">JUEGO SENDA DEL DRAGÓN</h1>
             <img src="/imgs/juego.PNG" alt="Background Image">
             <button onclick="window.open('https://view.genially.com/672ed9c32f24e70b43ab51f9', '_blank');" class="btnGame">
               <span class="share d-flex justify-content-center">CLIC AQUÍ</span>
@@ -229,9 +230,16 @@
       
       <!-- mapa -->
       <section class="maps p-2" id="maps">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
+        <div class="container-fluid sectionMap">
+          <div class="row justify-content-center mt-4">
             <!-- Columna para la imagen -->
+            <h1 class="d-flex justify-content-center titleYellow titleMap">RASTRO ORIENTAL</h1>
+            <div class="txtMapContain">
+              <p class="txtMapa text-white">Aquí podrás encontrar las recomendaciones de los lugares chinos a los que hayas ido, pueden ser restaurantes, tiendas o museos.</p>
+              <p class="txtMapa text-white">¿Quieres que tus recomendaciones aparezcan aquí? ¡Ve a nuestro <a title="Link" href="https://www.instagram.com/wenhua_transmedia/" rel="noopener noreferrer" target="_blank" class="instagramLinkMap txtMapa">Instagram</a> y deja tu recomendación en nuestras publicaciones!</p>
+            </div>
+            
+            
             <div class="col-7 columnaImg">
               <div class="image-container">
                 <img src="/imgs/Mapa.png" alt="Mapa">
@@ -262,94 +270,37 @@
           </div>
         </div>
 
-        <!-- contactos -->
+      <!-- Contactos -->
         <div class="col-6 contactos mt-3">
-            <h1 class="d-flex justify-content-center txtContach1">Contactos</h1>
-
-            <div class="container-fluid d-flex justify-content-center align-items-center contactMid">
-              <div class="container-fluid p-2 mt-3 midCont">
-                <div class="row">
-                  <div class="col-2">
-                    <ul class="social">
-                      <li class="social-item">
-                        <a title="Link" class="social-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/astrid.leon27?igsh=MW9xOGk3Z3JyY3Vnbw==">
-                          <svg width="26" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor"></path>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor"></path>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-  
-                  <div class="col-7 titleRight">
-                    <h3 class="txtContach3">Astrid Leon</h3>
-                  </div>
-                </div>
-              </div>
-  
-              
-              <div class="container-fluid p-2 mt-4">
-                <div class="row">
-                  <div class="col-2">
-                    <ul class="social">
-                      <li class="social-item">
-                        <a title="Link" class="social-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alssttc/">
-                          <svg width="26" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor"></path>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor"></path>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-7 titleRight"><h3 class="txtContach3">Alessandra Reinaltt</h3></div>
-                </div>
-              </div>
-  
-              
-              <div class="container-fluid p-2 mt-4">
-                <div class="row">
-                  <div class="col-2">
-                    <ul class="social">
-                      <li class="social-item">
-                        <a title="Link" class="social-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/claudia_gamarraa?igsh=MXFndWk5eGJjOXI2MQ==">
-                          <svg width="26" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor"></path>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor"></path>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-7 titleRight"><h3 class="txtContach3">Claudia Gamarra</h3></div>
-                </div>
-              </div>
-  
-  
-              <div class="container-fluid p-2 mt-4">
-                <div class="row">
-                  <div class="col-2">
-                    <ul class="social">
-                      <li class="social-item">
-                        <a title="Link" class="social-link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/luz_tuanamaalva?igsh=MXE1NXcwNDN0eDRlaw==">
-                          <svg width="26" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z" fill="currentColor"></path>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="currentColor"></path>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-7 titleRight"><h3 class="txtContach3">Luz Jimena</h3></div>
-                </div>
-              </div>
+          <h1 class="d-flex justify-content-center txtContach1">Contactos</h1>
+          <div class="container-fluid d-flex justify-content-center align-items-center contactMid">
+            
+            <!-- Contacto 1 -->
+            <div class="rowContact">
+              <a title="link" href="#"><i class='bx bxl-instagram linkgIg'></i></a>
+              <h3 class="txtContach3">Alessandra R.</h3>
+            </div>
+            
+            <!-- Contacto 2 -->
+            <div class="rowContact">
+              <a title="link" href="#"><i class='bx bxl-instagram linkgIg'></i></a>
+              <h3 class="txtContach3">Astrid L.</h3>
+            </div>
+            
+            <!-- Contacto 3 -->
+            <div class="rowContact">
+              <a title="link" href="#"><i class='bx bxl-instagram linkgIg'></i></a>
+              <h3 class="txtContach3">Claudia G.</h3>
+            </div>
+            
+            <!-- Contacto 4 -->
+            <div class="rowContact">
+              <a title="link" href="#"><i class='bx bxl-instagram linkgIg'></i></a>
+              <h3 class="txtContach3">Luz J.</h3>
             </div>
 
+          </div>
+        </div>
             
         </div>
         </div>
