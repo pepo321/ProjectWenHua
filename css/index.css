@@ -745,7 +745,18 @@ ul.d-flex li a i:active {
       transform: scale3d(1, 1, 1);
     }
   }
+
+  /* query */
   
+  @media(max-height: 670px) {
+    .carousel-item {
+        height: 120vh; /* Ajusta la altura para laptops */
+    }
+}
+
+
+
+
 
   /* footer */
   @media (max-width: 1230px) {
@@ -876,7 +887,7 @@ ul.d-flex li a i:active {
   }
 }
 
-/* Para pantallas con un ancho máximo de 800px */
+/* aca important */
 @media (max-width: 800px) {
   .contactMid {
     display: flex;                  /* Alinea todos los contactos en una fila */
@@ -1000,7 +1011,7 @@ ul.d-flex li a i:active {
       height: 100%;
     }
     
-    .carousel-item{
+    /* .carousel-item{
         height: 70vh;
     }
 
@@ -1008,7 +1019,7 @@ ul.d-flex li a i:active {
         height: 100%;
         max-height: 100%;
         object-position: center;  
-    }
+    } */
   }
 
 @media(max-width: 530px){
@@ -1078,14 +1089,14 @@ ul.d-flex li a i:active {
   }
 
   @media (max-width: 768px) {
-    .image-container{
+    /* .image-container{
       height: 40%;
     }
       .image-container img {
         width: 100%;  
         height: 100%;
         object-fit: center; 
-      }
+      } */
   
     .columnaImg{
         width: 100%;
@@ -1221,7 +1232,7 @@ ul.d-flex li a i:active {
         text-align: center;
     }
 
-    .carousel-item{
+    /* .carousel-item{
         height: 70vh;
     }
    
@@ -1230,7 +1241,7 @@ ul.d-flex li a i:active {
         height: 100%;
         max-height: 100%;
         object-position: center;  
-    }
+    } */
 }
 
 @media (max-width: 400px) {
@@ -1441,10 +1452,10 @@ ul.d-flex li a i:active {
         margin-bottom: 20px;  /
     }
 
-    .image-container img {
+    /* .image-container img {
         width: 100%;  
         border-radius: 50px; 
-    }
+    } */
 }
 
 /* Para pantallas con un ancho máximo de 400px */
@@ -1529,7 +1540,7 @@ ul.d-flex li a i:active {
         border-radius: 50px;
       }
 }
-
+/* 
 @media (max-width: 320){
     .carousel-item{
         height: 10vh;
@@ -1538,7 +1549,7 @@ ul.d-flex li a i:active {
     .carousel-item img{
         height: auto;
     }
-}
+} */
 
 @media (max-width: 1650){
     .carousel-item{
