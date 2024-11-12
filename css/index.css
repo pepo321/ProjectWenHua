@@ -597,12 +597,20 @@ ul.d-flex li a i:active {
   .background-container {
     position: relative;
     width: 100%;
-    height: 50vh;
+    
+  }
+
+  .imgGame{
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;
+    height: 65vh;
   }
   
   /* Imagen de fondo */
-  .background-container img {
-    width: 100%;
+  .imgGame img {
+    width: 100%;  
     height: 100%;
     object-fit: center; 
     opacity: 0.4; 
@@ -748,6 +756,25 @@ ul.d-flex li a i:active {
 
   /* query */
   
+  @media (max-height: 1200px){
+    .imgGame{
+      height: 70vh;
+    }
+  }
+
+  @media (max-height: 1100px){
+    .imgGame{
+      height: 65vh;
+    }
+  }
+
+  @media (max-height: 700px){
+    .imgGame{
+      height: 40vh;
+    }
+  }
+ 
+  
   @media(max-height: 670px) {
     .carousel-item {
         height: 100vh; /* Ajusta la altura para laptops */
@@ -813,34 +840,7 @@ ul.d-flex li a i:active {
     }
   }
 
-  @media (max-width: 1160px) {
-    .contactMid {
-      display: flex;                  /* Alinea todos los contactos en una fila */
-      justify-content: space-evenly;   /* Distribuye los contactos de manera equitativa */
-      flex-wrap: nowrap;               /* Impide que los elementos se envuelvan a la siguiente línea */
-      gap: 8px;                        /* Ajusta el espacio entre los elementos */
-      width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
-      text-align: center;
-    }
-  
-    .rowContact {
-      display: flex;                  /* Alinea íconos y texto horizontalmente */
-      align-items: center;            /* Centra verticalmente */
-      justify-content: center;        /* Centra horizontalmente */
-      font-size: 0.6rem;              /* Reducido aún más el tamaño del texto */
-      flex-direction: row;            /* Organiza el icono y el texto en una fila (horizontalmente) */
-    }
-  
-    .rowContact i {
-      font-size: 1.1rem;              /* Reduce el tamaño de los íconos */
-      margin-right: 5px;              /* Añade espacio entre el ícono y el texto */
-    }
-  
-    .txtContach3 {
-      font-size: 0.6rem;              /* Reduce el tamaño del texto aún más */
-      margin: 0;                      /* Elimina márgenes innecesarios */
-    }
-  }
+
   
 
   /* Para pantallas con un ancho máximo de 1160px */
@@ -870,6 +870,73 @@ ul.d-flex li a i:active {
   .txtContach3 {
     font-size: 0.6rem;              /* Reduce el tamaño del texto aún más */
     margin: 0;                      /* Elimina márgenes innecesarios */
+  }
+}
+
+
+@media (max-width: 1145px) {
+  .contactMid {
+    display: flex;                  /* Alinea todos los contactos en una fila */
+    justify-content: space-evenly;   /* Distribuye los contactos de manera equitativa */
+    flex-wrap: nowrap;               /* Impide que los elementos se envuelvan a la siguiente línea */
+    gap: 3px;                        /* Ajusta el espacio entre los elementos */
+    width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
+    text-align: center;
+  }
+
+  .rowContact {
+    display: flex;                  /* Alinea íconos y texto horizontalmente */
+    align-items: center;            /* Centra verticalmente */
+    justify-content: center;        /* Centra horizontalmente */
+    font-size: 0.4rem;              /* Reducido aún más el tamaño del texto */
+    flex-direction: row;            /* Organiza el icono y el texto en una fila (horizontalmente) */
+  }
+
+  .rowContact i {
+    font-size: 0.9rem;              /* Reduce el tamaño de los íconos */
+    margin-right: 4px;              /* Añade espacio entre el ícono y el texto */
+  }
+
+  .txtContach3 {
+    font-size: 0.5rem;              /* Reduce el tamaño del texto aún más */
+    margin: 0;                      /* Elimina márgenes innecesarios */
+  }
+}
+
+@media (max-width: 1112px) {
+  .contactMid {
+    display: flex;                  /* Alinea todos los contactos en una fila */
+    justify-content: space-evenly;   /* Distribuye los contactos de manera equitativa */
+    flex-wrap: nowrap;               /* Impide que los elementos se envuelvan a la siguiente línea */
+    gap: 0.6px;                        /* Ajusta el espacio entre los elementos */
+    width: 100%;                     /* Asegura que ocupe todo el ancho disponible */
+    text-align: center;
+    font-size: 3px;
+  }
+
+  .rowContact {
+    display: flex;                  /* Alinea íconos y texto horizontalmente */
+    align-items: center;            /* Centra verticalmente */
+    justify-content: center;        /* Centra horizontalmente */
+    font-size: 0.2rem;              /* Reducido aún más el tamaño del texto */
+    flex-direction: row;            /* Organiza el icono y el texto en una fila (horizontalmente) */
+  }
+
+  .rowContact h3{
+    font-size: 0.7rem;              /* Reduce el tamaño de los íconos */
+    margin-right: 2px;              /* Añade espacio entre el ícono y el texto */
+  }
+
+  .txtContach3 {
+    font-size: 0.9rem;              /* Reduce el tamaño del texto aún más */
+    margin: 0;                      /* Elimina márgenes innecesarios */
+  }
+}
+
+@media (max-width: 830px) {
+  .rowContact h3{
+    font-size: 0.6rem;              /* Reduce el tamaño de los íconos */
+    margin-right: 1px;              /* Añade espacio entre el ícono y el texto */
   }
 }
 
@@ -1006,18 +1073,10 @@ ul.d-flex li a i:active {
     color: #E4405F; /* Color del logo de Instagram */
   }
   
-  @media (max-width: 768px) {
-    .contactMid {
-      flex-direction: column;  /* Cambia la disposición a columna en pantallas pequeñas */
-      align-items: center;
-    }
-  }
+ 
 
   @media(max-width: 1200px){
-    .background-container{
-        height: 40vh;
-    }
-
+  
     .Btn {
         font-size: 25px;
       }
@@ -1026,15 +1085,7 @@ ul.d-flex li a i:active {
   
 
   @media(max-width: 750px){
-    .background-container{
-        height: 40vh;
-    }
-
-    /* Imagen de fondo */
-    .background-container img {
-      width: 100%;
-      height: 100%;
-    }
+    
     
     /* .carousel-item{
         height: 70vh;
@@ -1052,6 +1103,71 @@ ul.d-flex li a i:active {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .imgGame{
+    height: 40vh;
+  }
+
+  .contactMid{
+    height: 10px;
+  }
+  .rowContact{
+    gap: 0px;
+    height: 100%;
+    padding: 0px;
+  }
+
+  .rowContact h3{
+    font-size: 6px;
+    height: 100%;
+    padding: 0px;
+  }
+}
+
+@media(max-width: 315px){
+  .contactMid{
+    padding: 0px;
+  }
+  .rowContact{
+    gap: -4px;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rowContact h3{
+    font-size: 4px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media(max-width: 276px){
+  .contactMid{
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .rowContact{
+    gap: -4px;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rowContact h3{
+    font-size: 3px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .imgGame{
+    height: 30vh;
   }
 }
 
@@ -1085,22 +1201,7 @@ ul.d-flex li a i:active {
 
 /* aca */
   @media(max-width: 455){
-    .background-container{
-      height: auto;
-      object-fit: center; 
-  }
-
-    /* Imagen de fondo */
-    .background-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: center; 
-    }
-
-    .btnGame {
-      top: 65%;
-      left: 50%;
-  }
+    
   
   .btnGame:hover {
       /* Anula todos los efectos en hover para esta medida */
@@ -1287,16 +1388,23 @@ ul.d-flex li a i:active {
 }
 
 
-/* responsive cards */
-
-
-/* responsive cards */
-
-/* @media(max-width: 1380px){
-  .carousel-item{
-    height: 90vh;
+.txtGameContain{
+  display: flex;
+  flex-direction: column; /* Para apilar los párrafos uno encima de otro */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-} */
+
+/* gamerespon */
+@media (max-width: 400px){
+  .txtGame{
+    font-size: 9px;
+  }
+  
+
+ 
+}
 
 @media (max-width: 1600px) {
     .carousel-item{
@@ -1808,23 +1916,9 @@ ul.d-flex li a i:active {
         width: 100%;
     }
 
-    .txtContach1{
-        display: flex;
-        justify-content: baseline;
-    }
-    
-    .contactMid{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .txtContach3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  
   }
+
 
 
   @media (max-width: 530px) {
@@ -1880,7 +1974,7 @@ ul.d-flex li a i:active {
         justify-content: center; /* Centra los elementos horizontalmente */
         align-items: center; /* Centra los elementos verticalmente */
         width: 100%; /* Asegura que ocupe todo el ancho disponible */
-        padding: 0 10px; /* Espaciado a los lados */
+        padding: 0 ; /* Espaciado a los lados */
     }
 
     .titleRight{
@@ -1911,7 +2005,7 @@ ul.d-flex li a i:active {
         justify-content: center; /* Centra los elementos horizontalmente */
         align-items: center; /* Centra los elementos verticalmente */
         width: 100%; /* Asegura que ocupe todo el ancho disponible */
-        padding: 0 10px; /* Espaciado a los lados */
+        padding: 0 ; /* Espaciado a los lados */
     }
     .txtContach1{
         font-size: 15px;
