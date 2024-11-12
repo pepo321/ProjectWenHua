@@ -754,6 +754,12 @@ ul.d-flex li a i:active {
     }
 }
 
+@media(max-height: 650px) {
+  .carousel-item {
+      height: 140vh; /* Ajusta la altura para laptops */
+  }
+}
+
 @media(max-height: 750px) {
   .carousel-item {
       height: 100vh; /* Ajusta la altura para laptops */
@@ -1282,30 +1288,19 @@ ul.d-flex li a i:active {
 
 
 /* responsive cards */
-@media (max-width: 1600px) {
-    .carousel-item{
-        height: 30vh;
-    }
-    .carousel-item img{
-        height: auto;
-    }
-}
+
 
 /* responsive cards */
-@media (max-width: 1460px) {
-    .carousel-item{
-        height: 50vh;
-    }
-    .carousel-item img{
-        height: auto;
-    }
 
+/* @media(max-width: 1380px){
+  .carousel-item{
+    height: 90vh;
 }
-
+} */
 
 @media (max-width: 1600px) {
     .carousel-item{
-        height: 55vh;
+        height: 90vh;
     }
     .carousel-item img{
         height: auto;
@@ -1322,9 +1317,9 @@ ul.d-flex li a i:active {
 }
 
 /* responsive cards */
-@media (max-width: 1400px) {
+@media (max-width: 1405px) {
     .carousel-item{
-        height: 55vh;
+        height: 120vh;
     }
     .carousel-item img{
         height: auto;
@@ -1339,10 +1334,19 @@ ul.d-flex li a i:active {
         height: 200px; 
     }
 }
+
+@media(max-width: 1600px){
+  .carousel-item{
+    height: 120vh;
+}
+}
+
+
+
 
 
 @media (max-width: 1200px) {
-
+  
   .btnGame {
     width: 135px; /* Puede ajustarse */
     height: 30px; /* Puede ajustarse */
@@ -1390,12 +1394,20 @@ ul.d-flex li a i:active {
 @media (max-width: 1200px) {
 
     .carousel-item{
-        height: 55vh;
+        height: 140vh;
     }
-    .carousel-item img{
-        height: 100%;
-    }
+    
 }
+
+@media (max-height: 200px) {
+
+  .carousel-item{
+      height: 200vh;
+  }
+  
+}
+
+
 
 @media (max-width: 580px) {
 
