@@ -306,13 +306,14 @@ ul.d-flex li a i:active {
     position: absolute;
     inset: 0;
     animation: text-rotation 6s linear infinite;
-   
-    > span {
-      position: absolute;
-      transform: rotate(calc(18deg * var(--index)));
-      inset: 7px;
-    }
-  }
+}
+
+.button__text span {
+    position: absolute;
+    transform: rotate(calc(18deg * var(--index)));
+    inset: 7px;
+}
+
   
   .button__circle {
     position: relative;
@@ -1084,20 +1085,6 @@ ul.d-flex li a i:active {
 
   
 
-  @media(max-width: 750px){
-    
-    
-    /* .carousel-item{
-        height: 70vh;
-    }
-
-    .carousel-item img{
-        height: 100%;
-        max-height: 100%;
-        object-position: center;  
-    } */
-  }
-
 @media(max-width: 530px){
   .sectionMap{
     display: flex;
@@ -1215,15 +1202,6 @@ ul.d-flex li a i:active {
   }
 
   @media (max-width: 768px) {
-    /* .image-container{
-      height: 40%;
-    }
-      .image-container img {
-        width: 100%;  
-        height: 100%;
-        object-fit: center; 
-      } */
-  
     .columnaImg{
         width: 100%;
         height: 100%;
@@ -1357,17 +1335,6 @@ ul.d-flex li a i:active {
         padding: 0 10px; 
         text-align: center;
     }
-
-    /* .carousel-item{
-        height: 70vh;
-    }
-   
-
-    .carousel-item img{
-        height: 100%;
-        max-height: 100%;
-        object-position: center;  
-    } */
 }
 
 @media (max-width: 400px) {
@@ -1415,7 +1382,7 @@ ul.d-flex li a i:active {
     }
     .col-3 {
         width: 100%; 
-        margin-bottom: 20px; /
+        margin-bottom: 20px; 
     }
 
     .imagen-personaje {
@@ -1438,7 +1405,7 @@ ul.d-flex li a i:active {
     }
     .col-3 {
         width: 100%; 
-        margin-bottom: 20px; /
+        margin-bottom: 20px; 
     }
 
     .imagen-personaje {
@@ -1647,10 +1614,7 @@ ul.d-flex li a i:active {
         margin-bottom: 20px;  /
     }
 
-    /* .image-container img {
-        width: 100%;  
-        border-radius: 50px; 
-    } */
+ 
 }
 
 /* Para pantallas con un ancho máximo de 400px */
@@ -1735,16 +1699,7 @@ ul.d-flex li a i:active {
         border-radius: 50px;
       }
 }
-/* 
-@media (max-width: 320){
-    .carousel-item{
-        height: 10vh;
-    }
 
-    .carousel-item img{
-        height: auto;
-    }
-} */
 
 @media (max-width: 1650){
     .carousel-item{
