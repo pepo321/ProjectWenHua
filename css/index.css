@@ -1322,7 +1322,11 @@ ul.d-flex li a i:active {
         height: 120vh;
     }
     .carousel-item img{
-        height: auto;
+        height: 100%;
+    }
+
+    .carousel-btn{
+      bottom: 40px;
     }
     .col-3 {
         width: 100%; 
