@@ -1453,9 +1453,56 @@ ul.d-flex li a i:active {
 }
 }
 
+@media (max-height: 590px) {
+  .imgGame{
+    height: 80vh;
+  }
+  .btnGame{
+    top: 70%;
+  }
+}
+
+
 @media (max-height: 520px) {
   .btnGame{
-    top: 74%;
+    top: 76%;
+  }
+}
+
+@media (max-height: 400px) {
+  .imgGame{
+    height: 80vh;
+  }
+  .btnGame{
+    top: 70%;
+  }
+}
+
+@media (max-height: 206px) {
+  .imgGame{
+    height: 130vh;
+  }
+  
+  .btnGame{
+    top: 70%;
+  }
+}
+
+@media (max-height: 110px) {
+  .imgGame{
+    height: 130vh;
+  }
+  .btnGame{
+    top: 70%;
+  }
+}
+
+@media (max-height: 95px) {
+  .imgGame{
+    height: 250vh;
+  }
+  .btnGame{
+    top: 70%;
   }
 }
 
