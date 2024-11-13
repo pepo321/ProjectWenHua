@@ -13,6 +13,131 @@
   color: #ffffff;
 }
 
+.contNav {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px;
+}
+
+.contNav h1 {
+  flex: 1; 
+  text-align: center; 
+  margin: 0; 
+  color: white;
+  font-family: 'Noto Serif SC', serif; /* Fuente estilo chino */
+  font-size: 2rem; /* Tamaño del texto */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  position: relative; /* Necesario para aplicar la animación */
+  animation: glowing 5s infinite linear; /* Animación infinita */
+  margin-left: 7.8em;
+}
+
+/* Contenido decorativo antes del texto */
+.contNav h1::before {
+  content: '文化'; /* "Cultura" en chino */
+  font-size: 1.7rem;
+  margin-right: 6px;
+}
+
+@media (max-width: 1151px){
+  .contNav h1{
+    font-size: 1.4em;
+  }
+  .contNav h1::before {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 820px){
+  .contNav h1{
+    font-size: 1.2em;
+  }
+  .contNav h1::before {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 690px){
+  .contNav h1{
+    font-size: 1em;
+  }
+  .contNav h1::before {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 610px){
+  .contNav h1{
+    font-size: 0.8em;
+  }
+  .contNav h1::before {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 516px){
+  .contNav h1{
+    font-size: 0.6em;
+    margin-left: 40em;
+  }
+  .contNav h1::before {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 430px){
+  .contNav h1{
+    font-size: 0.5em;
+  }
+  .contNav h1::before {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 385px){
+  .contNav h1{
+    font-size: 0.5em;
+  }
+  .contNav h1::before {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 295px){
+  .contNav h1{
+    font-size: 0.4em;
+  }
+  .contNav h1::before {
+    font-size: 0.4rem;
+  }
+}
+
+@media(max-width: 1490px){
+  .contNav h1{
+    margin-left: 4em;
+  }
+}
+
+/* Animación de iluminación */
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 
+                 0 0 10px rgba(255, 255, 255, 0.4), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1), 
+                 0 0 30px rgba(255, 0, 0, 0.75), 
+                 0 0 45px rgba(255, 255, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 
+                 0 0 10px rgba(255, 255, 255, 0.4), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+}
+
+
 body{
   background-color: black;
 }
