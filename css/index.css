@@ -973,6 +973,38 @@ ul.d-flex li a i:active {
     position: relative;
     overflow: hidden; /* Evitar que se extienda fuera del área del footer */
   }
+
+  .maps{
+    position: relative;
+  }
+
+  .game{
+    position: relative;
+  }
+
+  .game::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Altura de la línea */
+    background: linear-gradient(90deg, rgba(214, 190, 51, 0.8), rgba(226, 212, 24, 0.795), rgba(214, 190, 51, 0.8));
+    box-shadow: 0 0 15px rgb(255, 217, 0); /* Sombra para el efecto de brillo */
+    z-index: 1; /* Asegura que se muestre por encima de otros elementos */
+}
+  .maps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Altura de la línea */
+    background: linear-gradient(90deg, rgba(214, 190, 51, 0.8), rgba(226, 212, 24, 0.795), rgba(214, 190, 51, 0.8));
+    box-shadow: 0 0 15px rgb(255, 217, 0); /* Sombra para el efecto de brillo */
+    z-index: 1; /* Asegura que se muestre por encima de otros elementos */
+}
+
   
   /* Borde superior brillante */
   .footer::before {
