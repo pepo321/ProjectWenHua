@@ -51,3 +51,33 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', reorderTrailers);
   });
   
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const textElements = document.querySelectorAll(".animated-text");
+  
+    textElements.forEach((textElement) => {
+      const text = textElement.textContent; // Obtiene el texto original
+      textElement.innerHTML = ""; // Limpia el contenido original
+  
+      // Envuelve cada letra en un <span>
+      [...text].forEach((letter, index) => {
+        const span = document.createElement("span");
+        span.textContent = letter; // Asigna la letra al span
+        textElement.appendChild(span);
+  
+        // Animación en bucle infinito
+        setInterval(() => {
+          setTimeout(() => {
+            span.classList.add("active");
+          }, index * 200); // Retraso progresivo por letra
+  
+          setTimeout(() => {
+            span.classList.remove("active");
+          }, index * 200 + 500); // Remueve el efecto después de 500ms
+        }, 2000); // Repite cada 2 segundos
+      });
+    });
+  });
+  

@@ -2381,6 +2381,16 @@ ul.d-flex li a i:active {
     padding-left: 5px;
  }
 
+ .animated-text span {
+  
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px transparent;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+.animated-text span.active {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ff0080;
+}
+
  
   @media (max-width: 768px) {
     .textoTitl{
