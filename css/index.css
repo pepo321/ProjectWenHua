@@ -242,6 +242,8 @@ ul.d-flex li a i:active {
     color: #c92424ec;
   }
 
+   
+
   .txtMapContain{
     display: flex;
     flex-direction: column; /* Para apilar los párrafos uno encima de otro */
@@ -388,6 +390,26 @@ ul.d-flex li a i:active {
     text-align: center;
 }
 
+.titleParRight p, .titleParLeft p{
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 1010px){
+  .titleParRight p, .titleParLeft p{
+    font-size: 22px;
+}
+}
+
+
+/* acatext */
+@media (max-width: 330px){
+  .titleParRight p, .titleParLeft p{
+    font-size: 18px;
+}
+
+}
 .titleParRight{
     padding-right: 40px;
     display: flex;
@@ -397,9 +419,6 @@ ul.d-flex li a i:active {
     text-align: center;
 }
 
-.texto{
-    color: white;
-}
 
 /* boton circular */
 .button {
@@ -560,26 +579,64 @@ ul.d-flex li a i:active {
 }
 
 .texto h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .texto p {
-    font-size: 1rem;
+    font-size: 1.8rem;
     line-height: 1.5;
+    text-align: left;
 }
+
+@media (max-width: 1605px){
+  .texto p{
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 1523px){
+  .texto h1 {
+    font-size: 2.7rem;
+}
+  .texto p{
+    font-size: 1.7em;
+    text-align: center;
+  }
+}
+
+
 .textoTrai{
   color: white;
 }
 
-@media (max-width: 455px){
+.titleGame{
+  font-size: 5.8em;
+}
+
+.txtGame{
+  font-size: 2.2em;
+}
+
+@media (max-width: 1450px){
   .titleGame{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:1.5em;
+    font-size: 5em;
+  }
+  
+  .txtGame{
+    font-size: 1.7em;
   }
 }
+
+
+  @media (max-width: 1450px){
+    .titleGame{
+      font-size: 4em;
+    }
+  
+ 
+}
+
 
 @media (max-width: 404px){
   .titleGame{
@@ -658,9 +715,7 @@ ul.d-flex li a i:active {
   .texto p{
     font-size: 12px;
   }
-  .titleParRight, .titleParLeft p{
-    font-size: 12px;
-  }
+  
 
   .centPerso h1{
     margin-bottom: -30px;
@@ -676,15 +731,13 @@ ul.d-flex li a i:active {
     font-size: 10px;
   }
 
-  .titleParRight, .titleParLeft p{
-    font-size: 10px;
-  }
+ 
   .titleParRight h1{
-    font-size: 12px;
+    font-size: 20px;
   }
   
   .titleParLeft h1{
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
@@ -783,6 +836,69 @@ ul.d-flex li a i:active {
     width: 60%;
     height: 50vh;
   }
+
+  .titleMap{
+    font-size: 6.8em;
+    text-align: center;
+  }
+
+  .txtMapa {
+    font-size: 2em;
+  }
+
+  .instagramLinkMap{
+    font-size: 34px;
+  }
+  
+
+  @media (max-width: 1110px){
+    .titleMap{
+      font-size: 6em;
+    }
+    .txtMapa {
+      font-size: 1.8em;
+    }
+  
+    .instagramLinkMap{
+      font-size: 30px;
+    }
+    
+  }
+
+  @media (max-width: 780px){
+    .titleMap{
+      font-size: 4em;
+    }
+
+    .txtMapa{
+      font-size: 1.5em;
+    }
+
+    .instagramLinkMap{
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 430px){
+    .titleMap{
+      font-size: 3em;
+    }
+
+    .txtMapa{
+      font-size: 1.2em;
+    }
+
+    .instagramLinkMap{
+      font-size: 20.2px;
+    }
+  }
+
+  @media (max-width: 270px){
+    .titleMap{
+      font-size: 1.7em;
+    }
+
+  }
   
   .image-container img {
     width: 100%;  
@@ -844,24 +960,123 @@ ul.d-flex li a i:active {
     border-radius: 50%;
   }
   
+  
+  /* footer */
   .footer {
     display: flex;
     align-items: center;
     color: white; /* Color del texto */
     padding: 2rem; /* Espaciado interno */
-    border-top: 3px solid transparent; /* Borde más delgado */
+    background: black; /* Fondo negro para el footer */
     height: 20vh;
     margin-top: 23px;
-  
-    /* Simulamos el efecto de brillo con un fondo en el borde superior */
-    background: linear-gradient(to bottom, rgba(255, 222, 77, 0.925) 3px, black 3px);
-    box-shadow: 0 -2px 15px rgba(255, 222, 77, 0.863), 0 -1px 5px rgba(255, 223, 77, 1); /* Sombra más intensa */
+    position: relative;
+    overflow: hidden; /* Evitar que se extienda fuera del área del footer */
   }
   
+  /* Borde superior brillante */
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Altura del borde */
+    background: linear-gradient(90deg, rgba(214, 190, 51, 0.8), rgba(226, 212, 24, 0.795), rgba(214, 190, 51, 0.8)); 
+    box-shadow: 0 0 15px rgb(255, 217, 0); /* Sombra suave para el efecto de brillo */
+  }
+  
+  @media (max-height: 630px){
+    .footer{
+      height: 24vh;
+    }
+  }
+
+  @media (max-height: 475px){
+    .footer{
+      height: 25vh;
+    }
+  }
+
+  @media (max-height: 415px){
+    .footer{
+      height: 40vh;
+    }
+  }
+
+  @media (max-height: 515px){
+    .footer{
+      height: 40vh;
+    }
+  }
+
+  @media (max-height: 370px){
+    .textoTitl h1{
+      font-size: 40px;
+    }
+
+    .textoTitl h3{
+      font-size: 25px;
+    }
+
+    .footer{
+      height: 45vh;
+    }
+  }
+
+  @media (max-height: 255px){
+    .textoTitl h1{
+      font-size: 31px;
+    }
+
+    .textoTitl h3{
+      font-size: 18px;
+    }
+
+    .footer{
+      height: 45vh;
+    }
+  }
+  
+  @media (max-width: 633px){
+    .footer{
+      height: 25vh;
+    }
+  }
+
+  @media (max-width: 768px){
+    .footer{
+      height: 25vh;
+    }
+  }
+
+  @media (max-width: 515px){
+    .footer{
+      height: 30vh;
+    }
+  }
+
+  @media (max-width: 225px){
+    .footer{
+      height: 20vh;
+    }
+
+    .textoTitl h1{
+      font-size: 20px;
+    }
+
+    .textoTitl h3{
+      font-size: 11px;
+    }
+  }
+  
+
   /* Efecto hover para el botón */
   .Btn:hover {
     animation: jello-horizontal 0.9s both;
   }
+
+  
   
   /* Animación de jello para el botón */
   @keyframes jello-horizontal {
@@ -1300,28 +1515,28 @@ ul.d-flex li a i:active {
 @media(max-width: 322px){
  
   .txtMapa{
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
-@media(max-width: 255px){
+@media(max-width: 260px){
 
   .txtMapa{
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
 @media(max-width: 208px){
 
   .txtMapa{
-    font-size: 9px;
+    font-size: 14px;
   }
 }
 
 @media(max-width: 180px){
 
   .txtMapa{
-    font-size: 6px;
+    font-size: 12px;
   }
 }
 
@@ -1507,9 +1722,60 @@ ul.d-flex li a i:active {
   .txtGame{
     font-size: 9px;
   }
-  
+}
 
- 
+@media (max-width: 953px){
+  .titleGame{
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 726px){
+  .titleGame{
+    font-size: 2.6em;
+  }
+
+  .txtGame{
+    font-size: 1.5em;
+  }
+}
+
+
+
+@media (max-width: 630px){
+  .titleGame{
+    font-size: 2.4em;
+  }
+
+  .txtGame{
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 591px){
+  .titleGame{
+    font-size: 2em;
+  }
+
+  .txtGame{
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 500px){
+  .titleGame{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 432px){
+  .titleGame{
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .txtGame{
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -1664,7 +1930,7 @@ ul.d-flex li a i:active {
 @media (max-width: 1200px) {
 
     .carousel-item{
-        height: 140vh;
+        height: 89vh;
     }
     
 }
@@ -1694,7 +1960,7 @@ ul.d-flex li a i:active {
 @media (max-width: 768px) {
     .col-3 {
         width: 100%; 
-        margin-bottom: 20px; /
+        margin-bottom: 20px; 
     }
 
     .imagen-personaje {
@@ -1715,12 +1981,32 @@ ul.d-flex li a i:active {
     }
 
     .texto h1 {
-        font-size: 1.2rem; 
+        font-size: 2rem; 
     }
 
-    
+    .texto p{
+      font-size: 1.2em;
+    }
+}
 
-   
+@media (max-width: 240px){
+  .texto h1 {
+    font-size: 1.5rem; 
+}
+
+  .texto p{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 215px){
+  .texto h1 {
+    font-size: 1.2rem; 
+}
+
+  .texto p{
+    font-size: 0.8em;
+  }
 }
 
 
@@ -1750,7 +2036,7 @@ ul.d-flex li a i:active {
     }
     .Btn { 
         height: 50px;  
-        margin-bottom: 20px;  /
+        margin-bottom: 20px;  
     }
 
  
@@ -2181,10 +2467,3 @@ ul.d-flex li a i:active {
       
       }
 }
-
-
-
-  
-
-
-  
