@@ -780,7 +780,7 @@ ul.d-flex li a i:active {
     display: flex;
     justify-content: center;  
     align-items: center;      
-    width: 100%;
+    width: 60%;
     height: 50vh;
   }
   
@@ -842,6 +842,20 @@ ul.d-flex li a i:active {
     filter: blur(1px);
     bottom: 7px;
     border-radius: 50%;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    color: white; /* Color del texto */
+    padding: 2rem; /* Espaciado interno */
+    border-top: 3px solid transparent; /* Borde más delgado */
+    height: 20vh;
+    margin-top: 23px;
+  
+    /* Simulamos el efecto de brillo con un fondo en el borde superior */
+    background: linear-gradient(to bottom, rgba(255, 222, 77, 0.925) 3px, black 3px);
+    box-shadow: 0 -2px 15px rgba(255, 222, 77, 0.863), 0 -1px 5px rgba(255, 223, 77, 1); /* Sombra más intensa */
   }
   
   /* Efecto hover para el botón */
