@@ -21,7 +21,10 @@
 }
 
 
-
+.gameContent{
+  height: 100%;
+  width: 100%;
+}
 
 .contNav h1 {
   flex: 1; 

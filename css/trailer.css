@@ -25,6 +25,10 @@ body {
     background-color: rgb(255, 241, 41) !important;
 }
 
+.trailer{
+    width: 100%;
+}
+
 .main {
     display: flex;
     justify-content: center; /* Centra el contenido del main horizontalmente */
@@ -35,6 +39,7 @@ body {
     border-radius: 30px; /* Redondea el contorno */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra alrededor del contorno */
     text-align: center; /* Asegura que el texto dentro de article se centre */
+    object-fit: cover;
 }
 
 
@@ -47,7 +52,7 @@ body {
 
 /* Asegúrate de que el contenedor ocupe todo el espacio posible */
 .contentVideo {
-   width: 100%;
+   width: 100;
    height: 100%;
     
     overflow: hidden; /* Para evitar el desbordamiento si el video es más grande */
@@ -75,16 +80,150 @@ body {
 .titleYellow {
     color: yellow; /* Título amarillo */
     font-size: 4em;
+    width: 100%;
 }
 
 .textTrailer p { 
     color: white; /* Texto blanco */
     font-size: 1.5em;
-    width: 81%;
+    width: 97%;
 }
 
 .trailersContent {
     height: 100%;
     width: 100%;
+    
+}
+
+.video-container{
+    height: 100%;
+    width: 100%;
+}
+
+/* titulo y texto */
+@media (max-width: 1610px){
+    .titleYellow{
+        font-size: 3.1em;
+    }
+
+    .textTrailer p{
+        font-size: 1.3em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px){
+    .titleYellow{
+        font-size: 2.9em;
+    }
+
+    .textTrailer p{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 880px){
+    .titleYellow{
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 690px){
+    .titleYellow{
+        font-size: 2em;
+    }
+
+    .textTrailer p{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 545px){
+    .titleYellow{
+        font-size: 1.5em;
+    }
+
+    .textTrailer p{
+        font-size: 0.9em;
+    }
+}
+
+
+/* video width */
+@media (max-width: 1450px){
+    .contentVideo video{
+        width: 50em;
+    }
+}
+
+@media (max-width: 1260px){
+    .contentVideo video {
+        width: 45em;
+    }
+}
+
+@media (max-width: 1140px){
+    .contentVideo video {
+        width: 37em;
+    }
+}
+
+@media (max-width: 980px){
+    .contentVideo video {
+        width: 34em;
+        height: 100%;
+    }
+}
+
+@media (max-width: 840px){
+    .contentVideo video{
+        width: 29em;
+    }
+}
+
+@media (max-width: 740px){
+    .contentVideo video{
+        width: 20em;
+    }
+}
+
+@media (max-width: 545px){
+    .contentVideo video{
+        width: 17em;
+    }
+}
+
+@media (max-width: 490px){
+    .contentVideo video{
+        width: 14em;
+    }
+}
+
+@media (max-width: 410px){
+    .contentVideo video{
+        width: 12em;
+    }
+}
+
+/* boton regresar */
+@media (max-width: 740px){
+    .btnRegresar{
+        font-size: 1px;
+    }
+    .btnRegresarContent{
+        width: 100%;
+        font-size: 3px;
+    }
+}
+
+@media (max-width: 670px){
+    .btnRegresarContent {
+        font-size: 4px; /* Reduce el tamaño de la fuente */
+        padding: 2px 6px; /* Ajusta el espacio interno */
+        width: auto; /* Deja que el ancho se ajuste al contenido */
+        height: auto; /* Ajusta automáticamente el alto */
+        line-height: normal; /* Ajusta la altura de línea */
+    }
     
 }
