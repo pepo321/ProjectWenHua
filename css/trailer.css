@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Faculty Glyphic", sans-serif;
+    /* box-sizing: border-box; */
 }
 
 
@@ -11,7 +12,6 @@ body {
     color: white; /* Color de texto blanco por defecto */
     font-family: 'Noto Serif SC', serif;
     margin: 0;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
     display: flex; /* Usamos flexbox para centrar */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
@@ -33,9 +33,11 @@ body {
     width: 80%; /* Ajusta el ancho según sea necesario */
     height: auto;
     padding: 20px;
+    
     border-radius: 30px; /* Redondea el contorno */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     object-fit: cover;
+    position: relative;
 }
 
 .section {
@@ -45,10 +47,6 @@ body {
     text-align: center; /* Asegura que el texto dentro de article se centre */
     
 }
-
-
-
-
 
   
 .titleYellow {
@@ -95,7 +93,7 @@ body {
 }
 
 .trailersContent {
-    height: 100%;
+    
     width: 100%;
     
 }
@@ -151,6 +149,34 @@ body {
 
     .textTrailer p{
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 453px){
+    .titleYellow{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 364px){
+    .titleYellow{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 342px){
+    .titleYellow{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 294px){
+    .titleYellow{
+        font-size: 0.6em;
+    }
+
+    .textTrailer{
+        font-size: 0.7em;
     }
 }
 
