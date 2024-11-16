@@ -29,18 +29,24 @@ body {
     width: 100%;
 }
 
-.main {
-    display: flex;
-    justify-content: center; /* Centra el contenido del main horizontalmente */
-    align-items: center; /* Centra el contenido del main verticalmente */
+.main{
     width: 80%; /* Ajusta el ancho según sea necesario */
     height: auto;
     padding: 20px;
     border-radius: 30px; /* Redondea el contorno */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra alrededor del contorno */
-    text-align: center; /* Asegura que el texto dentro de article se centre */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     object-fit: cover;
 }
+
+.section {
+    display: flex;
+    justify-content: center; /* Centra el contenido del main horizontalmente */
+    align-items: center; /* Centra el contenido del main verticalmente */
+    text-align: center; /* Asegura que el texto dentro de article se centre */
+    
+}
+
+
 
 
 
@@ -50,12 +56,12 @@ body {
 }
 
 
-/* Asegúrate de que el contenedor ocupe todo el espacio posible */
+
 .contentVideo {
    width: 100;
    height: 100%;
     
-    overflow: hidden; /* Para evitar el desbordamiento si el video es más grande */
+    overflow: hidden; 
     display: flex;
     justify-content: center;
 }
@@ -63,7 +69,6 @@ body {
 .contentVideo video {
     width: 60em; /* Hace que el video ocupe todo el ancho del contenedor */
     height: 29em; /* Hace que el video ocupe toda la altura del contenedor */
-    
     border: 5px dashed yellow; /* Borde amarillo rayado */
     border-radius: 10px;
 }
@@ -165,13 +170,14 @@ body {
 
 @media (max-width: 1140px){
     .contentVideo video {
-        width: 37em;
+        width: 39em;
+        height: 100%;
     }
 }
 
 @media (max-width: 980px){
     .contentVideo video {
-        width: 34em;
+        width: 38em;
         height: 100%;
     }
 }
@@ -184,28 +190,78 @@ body {
 
 @media (max-width: 740px){
     .contentVideo video{
-        width: 20em;
+        width: 28em;
     }
 }
 
-@media (max-width: 545px){
+@media (max-width: 650px){
+    .contentVideo video{
+        width: 25em;
+    }
+}
+
+@media (max-width: 590px){
+    .contentVideo video{
+        width: 23em;
+    }
+}
+
+@media (max-width: 524px){
+    .contentVideo video{
+        width: 21em;
+    }
+}
+
+@media (max-width: 480px){
+    .contentVideo video{
+        width: 19em;
+    }
+}
+
+@media (max-width: 432px){
     .contentVideo video{
         width: 17em;
+        height: 18em;
     }
 }
 
-@media (max-width: 490px){
+@media (max-width: 390px){
     .contentVideo video{
         width: 14em;
     }
 }
 
-@media (max-width: 410px){
+@media (max-width: 326px){
     .contentVideo video{
-        width: 12em;
+        width: 12.2em;
+        height: 14em;
     }
 }
 
+@media (max-width: 295px){
+    .contentVideo video{
+        width: 11.5em;
+        height: 13em;
+    }
+}
+
+@media (max-width: 285px){
+    .contentVideo video{
+        width: 10.2em;
+    }
+}
+
+@media (max-width: 255px){
+    .contentVideo video{
+        width: 9.8em;
+    }
+}
+
+@media (max-width: 243px){
+    .contentVideo video{
+        width: 9em;
+    }
+}
 /* boton regresar */
 @media (max-width: 740px){
     .btnRegresar{
@@ -217,13 +273,5 @@ body {
     }
 }
 
-@media (max-width: 670px){
-    .btnRegresarContent {
-        font-size: 4px; /* Reduce el tamaño de la fuente */
-        padding: 2px 6px; /* Ajusta el espacio interno */
-        width: auto; /* Deja que el ancho se ajuste al contenido */
-        height: auto; /* Ajusta automáticamente el alto */
-        line-height: normal; /* Ajusta la altura de línea */
-    }
-    
-}
+
+
